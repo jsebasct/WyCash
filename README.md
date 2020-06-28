@@ -4,10 +4,10 @@ ToDO
 
 $5 + 10 CHF = 10$ if chd: dlr 2:1
 -DONE- $5 * 2 = 10 
-make amount private
+-DONE- make amount private
 -DONE- dollar side effects
 money rounding
 equals()
-DONE hasCode()
+-DONE- hasCode()
 equals null
 equals object
