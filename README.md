@@ -11,3 +11,6 @@ equals()
 -DONE- hasCode()
 equals null
 equals object
+-DONE- 5CHF *2 = 10 CHF
+dolar / franc duplication
+common equals
