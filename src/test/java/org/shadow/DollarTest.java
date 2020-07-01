@@ -31,6 +31,12 @@ public class DollarTest
     }
 
     @Test
+    public void testEqualityFranc() {
+        Assert.assertTrue(new Franc(5).equals(new Franc(5)));
+        Assert.assertFalse(new Franc(5).equals(new Franc(6)));
+    }
+
+    @Test
     public void testFrancMultiplication()
     {
         Franc five = new Franc(5);
