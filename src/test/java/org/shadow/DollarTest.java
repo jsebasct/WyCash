@@ -13,9 +13,6 @@ import  org.junit.Assert;
  */
 public class DollarTest
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void testMultiplication()
     {
@@ -35,15 +32,16 @@ public class DollarTest
         Assert.assertFalse(Money.franc(5).equals(Money.dollar(5)));
     }
 
-//    @Test
-//    public void testEqualityFranc() {
-//    }
-
     @Test
     public void testFrancMultiplication()
     {
         Franc five = Money.franc(5);
         Assert.assertEquals(Money.franc(10), five.times(2));
         Assert.assertEquals(Money.franc(15), five.times(3));
+    }
+
+    public void testCurrency() {
+        Assert.assertEquals("USD", Money.dollar(1).currency());
+        Assert.assertEquals("CHF", Money.franc(1).currency());
     }
 }

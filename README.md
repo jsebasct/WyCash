@@ -16,7 +16,7 @@ dolar / franc duplication
 -DONE- common equals
 cmmmon times
 =DONE= frank != dollar
-currency
+=DONE= currency
 
 delete test franc multiplication ?
 
