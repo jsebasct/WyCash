@@ -12,11 +12,18 @@ equals()
 equals null
 equals object
 -DONE- 5CHF *2 = 10 CHF
-dolar / franc duplication
+-DONE-  dolar / franc duplication
 -DONE- common equals
-cmmmon times
-=DONE= frank != dollar
-=DONE= currency
-
+-DONE- commmon times
+-DONE- frank != dollar
+-DONE- currency
 delete test franc multiplication ?
+
+
+- llega el momento de hacerse una pregunta que es mas facil contestar con tests
+- Realmente importa si tenemos un Franc o un Money ?
+
+We’d prefer not to write a test when we have a red bar. However, we are about to
+change real model code, and we can’t change model code without a test
+
 

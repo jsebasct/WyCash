@@ -1,16 +1,16 @@
 package org.shadow;
 
-public abstract class Money {
+public class Money {
 
     protected String currency;
     protected int amount;
 
     public static Money dollar(int amount) {
-        return new Dollar(amount, "USD");
+        return new Money(amount, "USD");
     }
 
-    public static Franc franc(int amount) {
-        return new Franc(amount, "CHF");
+    public static Money franc(int amount) {
+        return new Money(amount, "CHF");
     }
 
     public Money(int amount, String currency) {
@@ -21,12 +21,22 @@ public abstract class Money {
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
-        return amount == money.amount && getClass().equals(money.getClass());
+        return amount == money.amount && currency() == money.currency();
     }
-
-    public abstract Money times(int multiplier);
 
     public String currency() {
         return this.currency;
+    }
+
+    public Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
+    }
+
+    @Override
+    public String toString() {
+        return "Money{" +
+                "currency='" + currency + '\'' +
+                ", amount=" + amount +
+                '}';
     }
 }
