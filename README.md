@@ -13,4 +13,10 @@ equals null
 equals object
 -DONE- 5CHF *2 = 10 CHF
 dolar / franc duplication
-common equals
+-DONE- common equals
+cmmmon times
+=DONE= frank != dollar
+currency
+
+delete test franc multiplication ?
+

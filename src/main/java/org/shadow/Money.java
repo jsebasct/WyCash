@@ -1,13 +1,18 @@
 package org.shadow;
 
-public class Money {
+public abstract class Money {
+
     protected int amount;
+
+    public static Money dollar(int amount) {
+        return new Dollar(amount);
+    }
 
     @Override
     public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Dollar)) return false;
         Money money = (Money) o;
-        return amount == money.amount;
+        return amount == money.amount && getClass().equals(money.getClass());
     }
+
+    public abstract Money times(int multiplier);
 }
